@@ -20,4 +20,9 @@ B_value=True
 print(B_value)
 
 
+colors =['red','blue', 'green', 'indigo','purple']   
+print(colors[3])
 
+for color in colors:
+    print(color)
+ 
