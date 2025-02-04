@@ -1,32 +1,30 @@
 using UnityEngine;
 
-public class boxx : MonoBehaviour
+public class Boxx : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Variables with different data types
     int number = 5;
-    string king = "hello world";
- 
-    // Update is called once per frame
+    string king = "Hello World";
+
+    // Start() is called before the first frame update
     void Start()
     {
-        Debug.Log("hello world");    
-        if (number>134){
-            Debug.Log("the numberis bigger then 134");
+        Debug.Log("Hello, World");
 
+        // Conditional Statement
+        if (number > 134)
+        {
+            Debug.Log("The number is bigger than 134");
         }
-        else{
-            Debug.Log("the number is smaller then 134");
+        else
+        {
+            Debug.Log("The number is smaller than 134");
         }
-        for (int i = 1; i <= 5; i++){
+
+        // Loop Example
+        for (int i = 1; i <= 5; i++)
+        {
             Debug.Log("Number: " + i);
-
         }
-        
-           
-        
     }
-    
-    
-        
-    
 }

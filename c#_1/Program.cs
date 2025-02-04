@@ -1,13 +1,40 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-int myVariable = 12
-bool isGameActive = False 
-double MyDouble = 3.15 
-private string secretboxingmatch = "top secret boxingmatch ";
-list <string> enemies = new list<string>();
-enemies.add("witch");
-enemies.add ("swordsman");
-enemies.add("goblin");
+﻿using System;
+using System.Collections.Generic;
 
-Int Add(int 6, int 4);
-return 6 + 4;
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello, World!");
+
+        // Variables with different data types
+        int myVariable = 12;
+        bool isGameActive = false;
+        double myDouble = 3.15;
+        
+        // Access Level Example (private variable inside a class)
+        string secretBoxingMatch = "Top secret boxing match";
+
+        // Array/List Example
+        List<string> enemies = new List<string>();
+        enemies.Add("Witch");
+        enemies.Add("Swordsman");
+        enemies.Add("Goblin");
+
+        // Loop through the list
+        foreach (string enemy in enemies)
+        {
+            Console.WriteLine("Enemy: " + enemy);
+        }
+
+        // Calling the function
+        int sum = Add(6, 4);
+        Console.WriteLine("Sum: " + sum);
+    }
+
+    // Function Example
+    static int Add(int a, int b)
+    {
+        return a + b;
+    }
+}
